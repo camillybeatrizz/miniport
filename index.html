@@ -1,0 +1,326 @@
+<!DOCTYPE HTML> <!-- Essa linha informa ao navegador qual a linguagem usada, garante que o navegador entenda o código direitinho e mostre a página da forma correta -->
+
+
+<html> <!-- Aqui é onde se dá início ao site. É uma tag na qual tudo o que estiver dentro dela vai fazer parte da estrutura da página.
+	É como a capa de um livro na qual todas as páginas ficam envolviads dentro dela. Outra exemplificação seria comparar o site como se fosse
+	uma casa, a tag <html> é a estrutura principal que segura todas as paredes, janelas e portas. Tudo o que for aparecer no site tem que estar 
+	dentro desta tag. -->
+
+	<head> <!-- A tag <head>, traduzida do inglês significa cabeça, é como o cérebro da página. Esta tag guarda as coisas que ajudam o site 
+		a funcionar, como o título da aba do navegador, os links para arquivos de estilo (CSS) e as configurações especiais. 
+		Porém, vale destacar que tudo o que está dentro desta tag não aparece diretamente no site, só ajuda a ser exibido do jeito certo.
+		Pode-se fazer uma analogia a um show: o que está dentro do <head> é como os bastidores de um show.
+		Imagine que um site é um teatro:
+		O palco (o que as pessoas veem) é o <body>. Os bastidores (onde as coisas são preparadas para que tudo funcione) são o <head>.
+		Ou seja, dentro do <head>, colocamos informações que o navegador precisa saber, mas que não aparecem na tela. -->
+		
+		<title>Miniport by HTML5 UP</title> <!-- A tag <title> serve para definir o título da página web.
+		O título é o que aparece na aba do navegador quando você abre o site. É como o nome do site na aba do seu navegador.
+		Já o Miniport by HTML5 UP é o título que aparecerá na aba do navegador. 
+		No caso, "Miniport" é o nome do site, e "by HTML5 UP" indica que o design do site foi feito por um grupo chamado HTML5 UP. -->
+
+		<meta charset="utf-8" /> <!-- A tag <meta> dá informações extras sobre a página, mas que não aparecem na tela.
+		charset="utf-8": Diz ao navegador como ler os textos da página corretamente, garantindo que acentos e caracteres especiais apareçam corretamente.
+		Essa linha ajuda a evitar problemas com letras e símbolos.-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> <!-- A tag <meta> fornece informações extras sobre a página.
+		name="viewport": Diz ao navegador como exibir a página em dispositivos móveis (como celulares e tablets).
+		width=device-width: Faz a página se ajustar à largura da tela do dispositivo.
+		initial-scale=1: Define o zoom inicial da página para 100%, ou seja, sem zoom.
+		user-scalable=no: Impede que o usuário dê zoom na página.
+		Portanto essa linha é uma das principais responsáveis pela responsividade do código, ou seja, ela faz com que a página se adapte corretamente a diferentes tamanhos de tela,
+	 	como celulares, tablets e desktops.-->
+
+		<link rel="stylesheet" href="assets/css/main.css" /> <!-- A tag <link> é usada para conectar arquivos externos à página, como arquivos de estilo (CSS), fontes ou ícones.
+		rel="stylesheet": diz que o arquivo que estamos ligando à página é um arquivo de estilo (CSS), que vai definir como os elementos da página serão visualmente exibidos (cores, fontes, margens, etc.).
+		href="assets/css/main.css": Mostra de onde vem o arquivo que vai deixar a página bonitinha (como cores, fontes e tamanhos).
+		Essa linha é importante porque aplica o estilo visual (como a aparência) na página. Sem ela, a página ficaria apenas com o conteúdo, sem nenhuma formatação visual.-->
+	
+	</head> <!--  Essa linha fecha a seção do código que contém informações sobre a página, como título, estilos e configurações. -->
+
+	<body class="is-preload"> <!-- Essa linha marca o início do conteúdo da página e aplica um estilo ou comportamento específico.
+		A tag <body> é onde fica o conteúdo principal da página, como textos, imagens e botões. O que aparece na tela do site está dentro dessa tag.
+		class="is-preload": essa é uma "etiqueta" que ajuda a aplicar um estilo específico à página. 
+		No caso, "is-preload" pode ser usado para aplicar um efeito visual ou comportamento, como fazer a página carregar de uma maneira especial.-->
+
+		<!-- Nav -->
+			<nav id="nav"> <!-- Essa linha cria a área onde ficam os links de navegação, como um menu de opções.
+				A tag <nav> é usada para indicar que o que está dentro dela são links de navegação, ou seja, menus ou botões para ajudar o usuário a se mover entre as páginas ou seções do site.
+				id="nav": dá um nome único para essa parte do código, que pode ser usado para identificar o menu e aplicar estilos ou ações específicas nele.-->
+				<ul class="container"> <!-- Essa linha cria uma lista de itens (geralmente, links ou outras coisas) e aplica um estilo visual a ela.
+					A tag <ul> significa "lista não ordenada". Ela é usada para criar uma lista de itens, onde os itens não têm uma ordem específica (não são numerados, por exemplo).
+					class="container": a "class" é uma etiqueta que aplica um estilo específico a esse grupo de itens.
+					"container" pode ser usado para dar uma aparência ou definir o tamanho e a posição da lista. -->
+
+					<li><a href="#top">Principal</a></li> <!-- Essa linha cria um item de menu chamado "Top", que, quando clicado, leva o usuário para o topo da página.
+					A tag <li> é usada para definir um item dentro de uma lista. Nesse caso, é um item dentro da lista que criamos antes com a tag <ul>.
+					<a href="#top">: a tag <a> cria um link. O href="#top" define para onde o link vai levar. O #top é uma referência para uma parte da página chamada "topo".
+					Top: Esse é o texto que vai aparecer no link. Quando alguém clicar, será levado para o topo da página.
+					</a>: Fecha o link.
+					</li>: Fecha o item da lista. -->
+
+					<li><a href="#work">Trabalhos</a></li> <!--Esse item de menu, chamado "Work", leva o usuário para a seção "work" da página quando clicado.-->
+
+					<li><a href="#portfolio">Portfólio</a></li> <!--Esse item de menu, chamado "Portfolio", leva o usuário para a seção "portfolio" da página quando clicado.-->
+
+					<li><a href="#contact">Contato</a></li> <!--Esse item de menu, chamado "Contact", leva o usuário para a seção "contact" da página quando clicado-->
+				</ul> <!-- Essa linha fecha a lista que começamos com a tag <ul>. Agora, todos os itens da lista estão completos.-->
+			</nav> <!-- Essa linha fecha a seção de navegação, encerrando o menu de links que começamos com a tag <nav>. -->
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1"> <!-- Essa linha define uma seção importante da página (um artigo) que fica no topo, com um estilo específico.
+			A tag <article> é usada para marcar um conteúdo independente ou uma seção importante da página, como um artigo, uma postagem de blog ou uma área principal de conteúdo. No caso, o artigo é uma seção com um conteúdo específico.
+			id="top": o id serve para dar um nome único a essa seção. O nome "top" indica que essa parte está relacionada ao topo da página. Esse nome pode ser usado para criar links que levem diretamente a essa área.
+			class="wrapper style1": a "class" é uma etiqueta que ajuda a aplicar estilos específicos a essa seção. "wrapper" é um nome genérico usado para envolver e organizar o conteúdo, e "style1" pode ser um estilo visual que deixa essa área com uma aparência definida.-->
+				<div class="container"> <!-- Essa linha cria um contêiner para agrupar o conteúdo e aplicar um estilo visual.
+				A tag <div> é usada para agrupar e organizar partes do conteúdo. Ela não faz nada por si só, mas serve como um "container" para outros elementos, como textos, imagens ou seções.
+				class="container": a "class" é usada para aplicar um estilo específico. "container" indica que esse grupo de conteúdo será tratado de uma maneira específica, como ajustar a largura ou centralizar os elementos dentro dele.-->
+					<div class="row"> <!--A "class" aqui indica que o conteúdo dentro dessa <div> será uma "linha". 
+					Isso é comumente usado para organizar os elementos em um layout em forma de linhas, como em um grid (grade).-->
+						<div class="col-4 col-5-large col-12-medium"> <!--col-4: Indica que a largura dessa coluna será de 4 partes de uma grade.
+						col-5-large: Diz que em telas grandes (como em desktops), essa coluna ocupará 5 partes da grade.
+						col-12-medium: Indica que em telas médias (como tablets), a coluna ocupará toda a largura da grade (12 partes).-->
+							<span class="image fit"><img src="images\purple.jpg" alt="" /></span> <!--Exibe uma imagem (pic00.jpg) dentro de um contêiner que a ajusta para caber no espaço disponível. 
+							O atributo alt está vazio, mas normalmente é usado para descrever a imagem caso ela não carregue.-->
+						</div>
+						<div class="col-8 col-7-large col-12-medium"> <!--col-8: A coluna ocupa 8 partes da grade em dispositivos pequenos.
+							col-7-large: Em telas grandes (desktops), a coluna ocupa 7 partes da grade.
+							col-12-medium: Em telas médias (tablets), a coluna ocupa toda a largura da grade (12 partes).-->
+							<header> <!--A tag <header> é usada para definir a seção de cabeçalho de uma página. 
+							Ela geralmente contém elementos como o título do site, logotipo e navegação, e serve para dar uma estrutura inicial ao conteúdo da página-->
+								<h1>Olá! Eu sou <strong>Camilly Beatriz</strong>.</h1> <!--Essa linha cria um título principal com o nome "Jane Doe" em negrito.
+								A tag <h1> define o título principal da página. É geralmente usado para o conteúdo mais importante e aparece em um tamanho maior.
+								A tag <strong> é usada para dar ênfase ao texto, normalmente deixando-o em negrito..-->
+							</header>
+							<p>E este é o <strong>Miniport</strong>, um modelo de site HTML5 gratuito e totalmente responsivo, projetado por <a href="http://twitter.com/ajlkn">AJ</a> para <a href="http://html5up.net">HTML5 UP</a> &amp; e lançado sob a licença <a href="http://html5up.net/license">CCA license</a>.</p> 
+							<!--Essa linha cria um parágrafo explicativo com links para o Twitter, o site HTML5 UP e a licença do template.
+							A tag <p> é usada para criar um parágrafo de texto.
+							<a href="http://twitter.com/ajlkn">AJ</a>: A tag <a> cria um link. O atributo href define o destino do link, neste caso, o perfil do Twitter de "AJ".
+							for <a href="http://html5up.net">HTML5 UP</a>: Outro link, agora para o site "HTML5 UP".
+							&amp;: Representa o caractere "&" (e comercial) de forma segura em HTML.
+							released under the <a href="http://html5up.net/license">CCA license</a>: Texto explicando que o template é liberado sob a "CCA license", com um link para mais informações sobre a licença.-->
+							<a href="#work" class="button large scrolly">Conheça minhas áreas de atuação</a> <!--Essa linha cria um botão estilizado que, quando clicado, rola até a seção "work" da página.-->
+						</div>
+					</div>
+				</div>
+			</article> <!--Essa linha fecha a tag <article> que foi aberta anteriormente. O <article> é usado para delimitar uma seção importante da página, e essa linha indica o fim dessa seção-->
+
+		<!-- Work -->
+			<article id="work" class="wrapper style2"> <!--Define uma nova seção com o id "work", que provavelmente está relacionada ao trabalho ou portfólio, 
+			e aplica estilos específicos com a classe "wrapper" e "style2".-->
+				<div class="container"> <!--Agrupa o conteúdo dentro de um contêiner, aplicando um estilo específico com a classe "container".-->
+					<header>
+						<h2>Minhas principais atividades</h2> <!--A tag <h2> define um subtítulo. 
+						O texto "Here's all the stuff I do" é o conteúdo desse subtítulo, que descreve a seção de forma clara e destacada.-->
+						<p>Áreas chave de atuação e desenvolvimento profissional</p>
+					</header>
+					<div class="row aln-center"> <!-- Cria uma linha (row) de conteúdo e aplica a classe aln-center para centralizar os elementos dentro dessa linha. -->
+						<div class="col-4 col-6-medium col-12-small"> <!-- Cria uma coluna que ocupa: 4 partes da grade em dispositivos pequenos; 
+							6 partes da grade em dispositivos médios; 
+							12 partes da grade (ou seja, toda a largura) em dispositivos pequenos. -->
+							<section class="box style1"> <!-- Define uma seção <section> e aplica os estilos da classe "box" e "style1", que  organizam e estilizam o conteúdo dentro dessa área.-->
+								<span class="icon featured fa-comments"></span> <!-- A tag <span> é usada para aplicar estilos ao conteúdo sem quebrar o fluxo da página.
+								A classe "icon" aplica o estilo de um ícone, "featured" pode destacar o ícone, e "fa-comments" é a classe do Font Awesome que exibe um ícone de balões de conversa (comentários). -->
+								<h3>Comunicação e Conteúdo</h3> <!-- A tag <h3> define um subtítulo de nível 3. 
+								O texto "Consequat lorem" é o conteúdo desse subtítulo, que ajuda a estruturar a página e a destacar o tema dessa seção. -->
+								<p>Habilidade em criar e transmitir informações claras e precisas para diferentes públicos.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon solid featured fa-camera-retro"></span>
+								<h3>Gestão de Imagem e Mídias Digitais</h3>
+								<p>Capacidade de desenvolver e gerenciar presença digital com estratégias visuais eficazes.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon featured fa-thumbs-up"></span>
+								<h3>Conformidade e Legalidade</h3>
+								<p>Conhecimento em garantir conformidade com normas legais e regulatórias em ambientes digitais.</p>
+							</section>
+						</div>
+					</div>
+					<footer> <!--A tag <footer> é usada para definir o rodapé da página.
+					Normalmente, ela contém informações como direitos autorais, links importantes ou detalhes de contato.-->
+						<p>Como essas atividades contribuem para resultados e soluções eficazes para os clientes?</p>
+						<a href="#portfolio" class="button large scrolly">Projetos recentes em destaque</a>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3"> <!-- Define uma nova seção (<article>) com o id "portfolio", provavelmente relacionada ao portfólio ou trabalhos da pessoa. 
+			A classe "wrapper" organiza o conteúdo e "style3" aplica um estilo visual específico para essa área. -->
+				<div class="container">
+					<header>
+						<h2>Projetos e áreas de atuação</h2>
+						<p>Explorando soluções inovadoras e tecnologias emergentes</p>
+					</header>
+					<div class="row"> <!-- Cria uma linha (row) para agrupar e organizar os elementos dentro dela, geralmente usada em layouts para alinhar o conteúdo de forma estruturada. -->
+						<div class="col-4 col-6-medium col-12-small"> <!-- Permite que o layout se ajuste de acordo com o tamanho da tela -->
+							<article class="box style2"> <!-- Define uma seção (<article>) com a classe "box", que provavelmente aplica um estilo de caixa ao conteúdo, e "style2", que aplica um estilo visual específico à seção. -->
+								<a href="#" class="image featured"><img src="images\DesenvolvimentoDeSoftware.jpg" alt="" /></a> <!-- <a href="#">: Cria um link, mas o # significa que ele não leva a lugar nenhum (geralmente usado como um link de exemplo ou para um efeito de clique).
+								class="image featured": Aplica estilos específicos para exibir a imagem de forma destacada.
+								<img src="images/pic01.jpg" alt="" />: Exibe a imagem localizada em "images/pic01.jpg". O atributo alt está vazio, mas normalmente é usado para descrever a imagem, caso ela não carregue. -->
+								<h3><a href="#">Desenvolvimento de Software</a></h3> <!-- <h3>: Define um subtítulo de nível 3.
+								<a href="#">: Cria um link, mas o # significa que ele não leva a lugar nenhum (geralmente usado como um link de exemplo).
+								Magna feugiat: Texto do título, que provavelmente se refere a um tema ou item.
+								Essa linha cria um subtítulo que contém um link, mas sem destino definido.	-->
+								<p>Desenvolvo software com Python, criando soluções eficientes e escaláveis, de automação a sistemas complexos.</p> <!--Essa linha cria um parágrafo com o texto fornecido. -->
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images\DevWeb.jpg" alt="" /></a>
+								<h3><a href="#">Desenvolvimento Web</a></h3>
+								<p>Desenvolvo para web, criando soluções interativas, responsivas e escaláveis, focando na experiência do usuário e no desempenho das aplicações.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images\Cyberseguraca.jpg" alt="" /></a>
+								<h3><a href="#">Cibersegurança</a></h3>
+								<p>Protejo sistemas com técnicas avançadas de cibersegurança, utilizando ferramentas para detectar e bloquear ameaças em tempo real.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images\InteligênciaArtificial.jpg" alt="" /></a>
+								<h3><a href="#">Inteligência Artificial</a></h3>
+								<p>Desenvolvo soluções com inteligência artificial, criando sistemas inteligentes e adaptáveis.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images\ComputaçãoemNuvem.jpg" alt="" /></a>
+								<h3><a href="#">Computação em Nuvem</a></h3>
+								<p>Desenvolvo soluções em nuvem, garantindo escalabilidade e segurança para dados e aplicações.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images\AutomaçãoeDevOps.jpg" alt="" /></a>
+								<h3><a href="#">Automação e DevOps</a></h3>
+								<p>Crio pipelines automatizados para integração e entrega contínua de software.</p>
+							</article>
+						</div>
+					</div>
+					<footer>
+						<p>Como posso contribuir para atender às suas necessidades e objetivos?</p>
+						<a href="#contact" class="button large scrolly">Entre em contato</a>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4"> <!-- Define uma nova seção (<article>) com o id "contact", que provavelmente está relacionada ao formulário de contato ou informações de contato. 
+			A classe "wrapper" organiza o conteúdo, e "style4" aplica um estilo visual específico para essa área -->
+				<div class="container medium"> <!-- Cria um contêiner (<div>) com a classe "container", 
+				que organiza e centraliza o conteúdo. A classe "medium" pode ajustar o tamanho do contêiner para telas médias ou aplicar um estilo específico -->
+					<header> <!-- A tag <header> define a seção de cabeçalho da página.
+					Normalmente, ela contém elementos como o título, logotipo, e navegação principal, que ajudam a identificar e estruturar o conteúdo da página. -->
+						<h2>Permita-me ajudar a realizar suas necessidades</h2>
+						<p>Vamos explorar como posso contribuir para o sucesso do seu projeto.</p>
+					</header>
+					<div class="row"> 
+						<div class="col-12">
+							<form method="post" action="#"> <!-- Essa linha cria o início de um formulário, que envia dados para o destino especificado.
+							<form>: Define um formulário para enviar dados.
+							method="post": Define o método de envio dos dados, neste caso, "post", que envia os dados de forma segura e oculta na solicitação.
+							action="#": Especifica o destino para onde os dados do formulário serão enviados. O # significa que, por enquanto, não há um destino definido (pode ser usado para testes).-->
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text" name="name" id="name" placeholder="Nome" /> <!-- Essa linha cria um campo de texto com um exemplo de "Name" como dica.
+										<input>: Cria um campo de entrada onde o usuário pode digitar informações.
+										type="text": Especifica que o campo é para texto.
+										name="name": Dá um nome ao campo, usado para identificar os dados quando enviados.
+										id="name": Dá um identificador único ao campo, geralmente usado para aplicar estilos ou para referenciar no JavaScript.
+										placeholder="Name": Exibe um texto de exemplo dentro do campo ("Name"), que desaparece quando o usuário começa a digitar.-->
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text" name="email" id="email" placeholder="E-mail" />
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" placeholder="Assunto" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Messagem"></textarea> <!-- Essa linha cria uma área de texto para que o usuário escreva uma mensagem.
+										<textarea>: Cria uma área maior de texto onde o usuário pode digitar mensagens ou descrições mais longas.
+										name="message": Define o nome do campo, usado para identificar os dados quando enviados.
+										id="message": Dá um identificador único ao campo, útil para aplicar estilos ou referenciar no JavaScript.
+										placeholder="Message": Exibe um texto de exemplo dentro da área de texto ("Message"), que desaparece quando o usuário começa a digitar.-->
+									</div>
+									<div class="col-12">
+										<ul class="actions"> <!-- Cria uma lista não ordenada (<ul>) com a classe "actions". 
+										Essa classe é usada para aplicar estilos a itens de ação, como botões ou links dentro da lista, organizando-os de forma estruturada. -->
+											<li><input type="submit" value="Enviar Mensagem" /></li> <!-- Essa linha cria um item de lista com um botão de envio que permite ao usuário enviar a mensagem.
+											<li>: Define um item de lista. Neste caso, ele contém um botão de envio dentro da lista de ações.
+											<input type="submit">: Cria um botão de envio para o formulário.
+											value="Send Message": Define o texto que aparece no botão, neste caso, "Send Message".-->
+											<li><input type="reset" value="Limpar Formulário" class="alt" /></li> <!--Essa linha cria um botão de reset que limpa os dados preenchidos no formulário.
+											<li>: Define um item de lista, semelhante ao item anterior.
+											<input type="reset">: Cria um botão que, quando clicado, limpa todos os campos do formulário, revertendo-os aos seus valores iniciais.
+											value="Clear Form": Define o texto que aparece no botão, que neste caso é "Clear Form".
+											class="alt": Aplica uma classe de estilo alternativo ao botão, provavelmente alterando sua aparência para diferenciá-lo.-->
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-12"> <!-- Cria uma coluna que ocupa toda a largura disponível da grade (12 partes),
+						o que significa que essa coluna vai ocupar o espaço completo dentro de seu contêiner, independentemente do tamanho da tela. -->
+							<hr /> <!-- A tag <hr /> cria uma linha horizontal, geralmente usada para separar visualmente diferentes seções ou conteúdos na página.-->
+							<h3>Find me on ...</h3>
+							<ul class="social"> <!-- Cria uma lista não ordenada (<ul>) com a classe "social", geralmente usada para agrupar links para redes sociais ou ícones de redes sociais de forma estruturada. -->
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> <!-- Essa linha cria um item de lista com um link para o Twitter, exibindo o ícone do Twitter e uma legenda ao lado.
+								<li>: Define um item de lista.
+								<a href="#">: Cria um link, mas o # significa que ele não leva a lugar nenhum por enquanto.
+								class="icon brands fa-twitter": Aplica classes para estilizar o link como um ícone de marca (rede social) e exibir o ícone do Twitter (usando Font Awesome).
+								<span class="label">Twitter</span>: Exibe o nome "Twitter" como uma legenda para o ícone. -->
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<!--
+								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
+								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
+								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
+								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
+								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
+								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
+								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
+								-->
+							</ul>
+							<hr />
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> <!-- Essas linhas exibem informações de copyright e design no rodapé da página.
+							<li>: Define um item de lista.
+							&copy;: Exibe o símbolo de copyright (©).
+							Untitled. All rights reserved.: Texto indicando que todos os direitos são reservados para o criador do conteúdo.
+							Design: <a href="http://html5up.net">HTML5 UP</a>: Exibe uma referência ao designer do site, com um link para o site "HTML5 UP", que fornece templates gratuitos.-->
+						</ul>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script> <!-- Carrega o arquivo JavaScript "jquery.min.js" da pasta "assets/js". 
+			O jQuery é uma biblioteca JavaScript popular usada para simplificar a manipulação de elementos HTML, animações, e eventos na página.
+			O .min.js significa que o arquivo foi minimizado para reduzir o tamanho e melhorar a performance de carregamento.-->
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body> <!-- A tag </body> fecha a seção do corpo da página. 
+	Tudo o que foi colocado dentro da tag <body> (como conteúdo, textos, imagens e scripts) é o que será exibido na página web.-->
+</html> <!-- A tag </html> fecha o documento HTML. Ela indica o fim do conteúdo da página e encerra a estrutura do HTML.-->
